@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<header>
+
+    <body>
+        <header>
+            <nav>
+                <div class="logo">Boutique Peluches</div>
+                <img src="../logo.png" class="img_logo" alt="logo">
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Produits</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="section section-primary">
+            <h1>Produits phares</h1>
+            <div class="bloc_card">
+                <div class="product-card">
+                    <img src="peluche.jpg" alt="Peluche">
+                    <h2>Peluche Mario</h2>
+                    <p>Une peluche de Mario de haute qualité.</p>
+                    <div class="price">€29.99</div>
+                    <button class="button-primary">Ajouter au panier</button>
+                </div>
+                <div class="product-card">
+                    <img src="peluche.jpg" alt="Peluche">
+                    <h2>Peluche Mario</h2>
+                    <p>Une peluche de Mario de haute qualité.</p>
+                    <div class="price">€29.99</div>
+                    <button class="button-primary">Ajouter au panier</button>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Boutique Peluches. Tous droits réservés.</p>
+        </footer>
+    </body>
+
+</html>
