@@ -1,7 +1,7 @@
 // config/db.php
 <?php
 $host = '127.0.0.1';
-$db = 'boutique_en_ligne';
+$db = 'pixel_plush';
 $user = 'root';
 $pass = '';
 $charset = 'utf8mb4';
