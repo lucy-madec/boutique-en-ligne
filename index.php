@@ -26,20 +26,31 @@
             <h1>Produits phares</h1>
             <div class="bloc_card">
                 <div class="product-card">
-                    <img src="peluche.jpg" alt="Peluche">
+                    <img src="public\images\categories\films_&_series\stranger_things\demogorgon.jpg" alt="Peluche">
                     <h2>Peluche Mario</h2>
                     <p>Une peluche de Mario de haute qualité.</p>
                     <div class="price">€29.99</div>
                     <button class="button-primary">Ajouter au panier</button>
                 </div>
                 <div class="product-card">
-                    <img src="peluche.jpg" alt="Peluche">
+                    <img src="public\images\categories\films_&_series\harry_potter\touffu.jpg" alt="Peluche">
                     <h2>Peluche Mario</h2>
                     <p>Une peluche de Mario de haute qualité.</p>
                     <div class="price">€29.99</div>
                     <button class="button-primary">Ajouter au panier</button>
                 </div>
             </div>
+        </section>
+
+        <section id="produits-phares">
+            <h2>Produits Phares</h2>
+            <?php foreach ($produitsPhares as $produit) : ?>
+                <div class="produit">
+                    <h3><?php echo $produit['nom']; ?></h3>
+                    <p><?php echo $produit['description']; ?></p>
+                    <p>Prix: <?php echo $produit['prix']; ?>€</p>
+                </div>
+            <?php endforeach; ?>
         </section>
 
         <footer>
