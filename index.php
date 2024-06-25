@@ -52,7 +52,16 @@
                 </div>
             <?php endforeach; ?>
         </section>
-
+        <section id="derniers-produits">
+            <h2>Derniers Produits</h2>
+            <?php foreach ($derniersProduits as $produit) : ?>
+                <div class="produit">
+                    <h3><?php echo $produit['nom']; ?></h3>
+                    <p><?php echo $produit['description']; ?></p>
+                    <p>Prix: <?php echo $produit['prix']; ?>€</p>
+                </div>
+            <?php endforeach; ?>
+        </section>
         <footer>
             <p>&copy; 2024 Boutique Peluches. Tous droits réservés.</p>
         </footer>
