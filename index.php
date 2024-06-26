@@ -15,7 +15,7 @@
                 <div class="logo">Boutique Peluches</div>
                 <img src="public/images/logo.png" class="img_logo" alt="logo">
                 <ul>
-                    <li><a href="#">Accueil</a></li>
+                    <li><a href="index.php">Accueil</a></li>
                     <li><a href="#">Produits</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
