@@ -12,16 +12,11 @@
 
     <body>
         <header>
-            <nav>
-                <div class="logo">Boutique Peluches</div>
+            <div class="logo-container">
                 <img src="public/images/logo.png" class="img_logo" alt="logo">
-                <ul>
-                    <li><a href="index.php">Accueil</a></li>
-                    <li><a href="#">Produits</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+            </div>
         </header>
+
 
         <section class="section section-primary">
             <h1>Produits phares</h1>

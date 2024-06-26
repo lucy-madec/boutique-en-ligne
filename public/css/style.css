@@ -17,40 +17,15 @@ a:hover {
 }
 
 /* Header */
-header {
-    background-color: #FFB74D; /* Orange Doux */
-    color: #FFFFFF; /* Blanc */
-    padding: 10px 20px;
-}
-
-header a {
-    color: #FFFFFF; /* Blanc */
-}
-
-header .logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-
 .img_logo{
     height: 100px;
 
 }
-/* Navigation */
-nav {
+
+.logo-container {
+    flex: 1;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
+    justify-content: center;
 }
 
 /* Buttons */
