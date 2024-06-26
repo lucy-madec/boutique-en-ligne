@@ -5,7 +5,7 @@ require_once 'src/models/Utilisateur.php';
 
 $utilisateur = new Utilisateur($pdo);
 
-// Exemple de création d'utilisateur
+// Création d'utilisateur
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $nom = $_POST['nom'];
     $email = $_POST['email'];
@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $utilisateur->create($nom, $email, $mot_de_passe);
 }
 
-// Exemple d'affichage de tous les utilisateurs
+// Affichage de tous les utilisateurs
 $utilisateurs = $utilisateur->getAll();
 foreach ($utilisateurs as $user) {
     echo $user['nom'] . ' - ' . $user['email'] . '<br>';
