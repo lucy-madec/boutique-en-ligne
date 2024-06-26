@@ -39,6 +39,13 @@
                     <div class="price">€29.99</div>
                     <button class="button-primary">Ajouter au panier</button>
                 </div>
+                <div class="product-card">
+                    <img src="public\images\categories\films_&_series\stranger_things\demogorgon.jpg" alt="Peluche">
+                    <h2>Peluche Mario</h2>
+                    <p>Une peluche de Mario de haute qualité.</p>
+                    <div class="price">€29.99</div>
+                    <button class="button-primary">Ajouter au panier</button>
+                </div>
             </div>
         </section>
 
