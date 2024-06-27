@@ -42,7 +42,6 @@
 --     FOREIGN KEY (`sous_categorie_id`) REFERENCES `sous_categorie`(`id`)
 -- ) ENGINE = InnoDB;
 
-
 -- CREATE TABLE `pixel_plush`.`panier` (
 --     `id` INT NOT NULL AUTO_INCREMENT,
 --     `utilisateur_id` INT NOT NULL,
@@ -69,6 +68,20 @@
 --     FOREIGN KEY (`produit_id`) REFERENCES `produit`(`id`)
 -- ) ENGINE = InnoDB;
 
-INSERT INTO `categorie` (`id`, `nom`) VALUES
-(1, 'jeux_video'),
-(2, 'films_&_series');
+INSERT INTO
+    `categorie` (`id`, `nom`)
+VALUES (1, 'jeux_video'),
+    (2, 'films_&_series');
+
+INSERT INTO
+    `sous_categorie` (`id`, `nom`, `categorie_id`)
+VALUES ('7', 'disney', '2'),
+    (NULL, 'demon_slayer', '2'),
+    (NULL, 'mha', '2'),
+    (NULL, 'harry_potter', '2'),
+    (
+        NULL,
+        'league_of_legends',
+        '1'
+    ),
+    (NULL, 'mario', '1');
