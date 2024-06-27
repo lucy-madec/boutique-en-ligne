@@ -90,34 +90,12 @@
 --     (NULL,'league_of_legends','1'),
 --     (NULL, 'mario', '1');
 
-
 -- INSERT INTO `utilisateur` (`id`, `nom`, `email`, `mot_de passe`, `date_inscription`, `admin`) VALUES
--- (1, 'lucy', 'lucy.admin@pixelplush.fr', 'Azerty123*', '2024-06-27 13:06:37', 1),
--- (2, 'lucy-admin', 'lucy@laplateforme.io', 'Azerty123*', '2024-06-27 13:06:37', 0);
+-- (1, 'lucy-admin', 'lucy.admin@pixelplush.fr', 'Azerty123*', '2024-06-27 13:06:37', 1),
+-- (2, 'lucy', 'lucy@laplateforme.io', 'Azerty123*', '2024-06-27 13:06:37', 0);
 
 -- INSERT INTO
---     `utilisateur` (
---         `id`,
---         `nom`,
---         `email`,
---         `mot_de passe`,
---         `date_inscription`,
---         `admin`
---     )
--- VALUES 
---     (
---         '3',
---         'lucas',
---         'lucas.iribaren@laplateforme.io',
---         'Azerty123*',
---         CURRENT_TIMESTAMP,
---         '0'
---     ),
---     (
---         '4',
---         'lucas-admin',
---         'lucas.admin@pixelplush.fr',
---         'Azerty123*',
---         CURRENT_TIMESTAMP,
---         '1'
---     )
+--     `utilisateur` (`id`,`nom`,`email`,`mot_de passe`,`date_inscription`,`admin`)
+-- VALUES
+--     ('3','lucas','lucas.iribaren@laplateforme.io','Azerty123*',CURRENT_TIMESTAMP,'0'),
+--  ('4','lucas-admin','lucas.admin@pixelplush.fr','Azerty123*',CURRENT_TIMESTAMP,'1');
