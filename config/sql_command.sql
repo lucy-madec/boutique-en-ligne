@@ -73,6 +73,14 @@ INSERT INTO
 VALUES (1, 'jeux_video'),
     (2, 'films_&_series');
 
+INSERT INTO `sous_categorie` (`id`, `nom`, `categorie_id`) VALUES
+(1, 'dc', 2),
+(2, 'death_note', 2),
+(3, 'marvel', 2),
+(4, 'stranger_things', 2),
+(5, 'minecraft', 1),
+(6, 'pokemon', 1);
+
 INSERT INTO
     `sous_categorie` (`id`, `nom`, `categorie_id`)
 VALUES ('7', 'disney', '2'),
