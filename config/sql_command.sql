@@ -95,7 +95,58 @@
 -- (2, 'lucy', 'lucy@laplateforme.io', 'Azerty123*', '2024-06-27 13:06:37', 0);
 
 -- INSERT INTO
---     `utilisateur` (`id`,`nom`,`email`,`mot_de passe`,`date_inscription`,`admin`)
--- VALUES
---     ('3','lucas','lucas.iribaren@laplateforme.io','Azerty123*',CURRENT_TIMESTAMP,'0'),
---  ('4','lucas-admin','lucas.admin@pixelplush.fr','Azerty123*',CURRENT_TIMESTAMP,'1');
+--     `utilisateur` (
+--         `id`,
+--         `nom`,
+--         `email`,
+--         `mot_de passe`,
+--         `date_inscription`,
+--         `admin`
+--     )
+-- VALUES 
+--     (
+--         '3',
+--         'lucas',
+--         'lucas.iribaren@laplateforme.io',
+--         'Azerty123*',
+--         CURRENT_TIMESTAMP,
+--         '0'
+--     ),
+--     (
+--         '4',
+--         'lucas-admin',
+--         'lucas.admin@pixelplush.fr',
+--         'Azerty123*',
+--         CURRENT_TIMESTAMP,
+--         '1'
+--     )
+
+-- DC
+UPDATE produit SET nom = 'Batman' WHERE nom = 'batman';
+UPDATE produit SET nom = 'Catwoman' WHERE nom = 'catwoman';
+UPDATE produit SET nom = 'Superman' WHERE nom = 'superman';
+
+-- Death Note
+UPDATE produit SET nom = 'L' WHERE nom = 'l';
+UPDATE produit SET nom = 'Light Yagami' WHERE nom = 'light_yagami';
+UPDATE produit SET nom = 'Ryuk' WHERE nom = 'ryuk';
+
+-- Marvel
+UPDATE produit SET nom = 'Black Widow' WHERE nom = 'black_widow';
+UPDATE produit SET nom = 'Iron Man' WHERE nom = 'iron_man';
+UPDATE produit SET nom = 'Spider Man' WHERE nom = 'spider_man';
+
+-- Stranger Things
+UPDATE produit SET nom = 'Demogorgon' WHERE nom = 'demogorgon';
+UPDATE produit SET nom = 'Eleven' WHERE nom = 'eleven';
+UPDATE produit SET nom = 'Lucas' WHERE nom = 'lucas';
+
+-- Minecraft
+UPDATE produit SET nom = 'Creeper' WHERE nom = 'creeper';
+UPDATE produit SET nom = 'Ender Dragon' WHERE nom = 'ender_dragon';
+UPDATE produit SET nom = 'Renard' WHERE nom = 'renard';
+
+-- Pokémon
+UPDATE produit SET nom = 'Capumain' WHERE nom = 'capumain';
+UPDATE produit SET nom = 'Pikachu' WHERE nom = 'pikachu';
+UPDATE produit SET nom = 'Salameche' WHERE nom = 'salameche';
