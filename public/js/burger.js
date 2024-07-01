@@ -1,14 +1,4 @@
 // Burger Animation
-
-document.addEventListener('DOMContentLoaded', function() {
-    const hamburgerButton = document.getElementById('hamburger-button');
-    hamburgerButton.addEventListener('click', function() {
-        this.classList.toggle('active');
-    });
-});
-
-
-// Mobile Menu
 document.getElementById('hamburger-button').addEventListener('click', function () {
     var mobileMenu = document.getElementById('mobile-menu');
     var hamburgerButton = document.getElementById('hamburger-button');
@@ -21,3 +11,13 @@ document.getElementById('hamburger-button').addEventListener('click', function (
         hamburgerButton.classList.add('active');
     }
 });
+
+// Mobile menu
+document.getElementById('close-button').addEventListener('click', function () {
+    var mobileMenu = document.getElementById('mobile-menu');
+    var hamburgerButton = document.getElementById('hamburger-button');
+
+    mobileMenu.style.display = 'none';
+    hamburgerButton.classList.remove('active');
+});
+
