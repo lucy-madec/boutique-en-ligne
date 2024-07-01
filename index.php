@@ -11,7 +11,9 @@
 <body>
     <header>
         <div class="logo-container">
+            <a href="index.php">
             <img src="public/images/logo.png" class="img_logo" alt="logo">
+            </a>
         </div>
         <div class="profile-image-container">
             <a href="#">
