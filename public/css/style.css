@@ -61,32 +61,37 @@ a:hover {
   }
 
   /* Mobile Menu */
-  .mobile-menu {
+.mobile-menu {
     display: none;
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
     padding: 20px;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    z-index: 1000; 
 }
 
-.mobile-menu ul {
+
+.mobile-menu div{   
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.mobile-menu ul{
     display: flex;
     flex-direction: column;
     list-style: none;
-    padding: 0;
-    text-align: center;
-    margin: 0;
-    margin-top: 50px;
+    background-color: rgba(15, 15, 15, 0.9);
+    border-radius: 5px;
+    padding: 15%  15% ;
+    margin: 9px;
 }
 
 .mobile-menu ul li {
