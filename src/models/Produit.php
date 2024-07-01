@@ -1,62 +1,64 @@
 <?php
-class Produit {
+
+class Product {
     private $pdo;
 
     public function __construct($pdo) {
         $this->pdo = $pdo;
     }
 
-    // Récupérer les produits phares
-    public function getProduitsPhares() {
-        $stmt = $this->pdo->prepare('SELECT * FROM produits WHERE phare = 1');
+    // Get featured products
+    public function getFeaturedProducts() {
+        $stmt = $this->pdo->prepare('SELECT * FROM products WHERE featured = 1');
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    // Récupérer les derniers produits ajoutés
-    public function getDerniersProduits() {
-        $stmt = $this->pdo->prepare('SELECT * FROM produits ORDER BY date_ajout DESC LIMIT 5');
+    // Get latest added products
+    public function getLatestProducts() {
+        $stmt = $this->pdo->prepare('SELECT * FROM products ORDER BY date_added DESC LIMIT 5');
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    // Recherche de produits par nom
-    public function rechercheProduits($query) {
-        $stmt = $this->pdo->prepare('SELECT * FROM produits WHERE nom LIKE ?');
+    // Search products by name
+    public function searchProducts($query) {
+        $stmt = $this->pdo->prepare('SELECT * FROM products WHERE name LIKE ?');
         $stmt->execute(["%$query%"]);
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    // Récupérer les sous-catégories d'une catégorie spécifique
-    public function getSousCategories($categorie_id) {
-        $stmt = $this->pdo->prepare('SELECT * FROM sous_categories WHERE categorie_id = ?');
-        $stmt->execute([$categorie_id]);
+    // Get subcategories of a specific category
+    public function getSubcategories($category_id) {
+        $stmt = $this->pdo->prepare('SELECT * FROM subcategories WHERE category_id = ?');
+        $stmt->execute([$category_id]);
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    // Récupérer les produits par sous-catégorie
-    public function getProduitsParSousCategorie($sous_categorie_id) {
-        $stmt = $this->pdo->prepare('SELECT * FROM produits WHERE sous_categorie_id = ?');
-        $stmt->execute([$sous_categorie_id]);
+    // Get products by subcategory
+    public function getProductsBySubcategory($subcategory_id) {
+        $stmt = $this->pdo->prepare('SELECT * FROM products WHERE subcategory_id = ?');
+        $stmt->execute([$subcategory_id]);
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    // Ajouter un nouveau produit
-    public function ajouterProduit($nom, $description, $prix, $sous_categorie_id, $phare = 0) {
-        $stmt = $this->pdo->prepare('INSERT INTO produits (nom, description, prix, sous_categorie_id, phare) VALUES (?, ?, ?, ?, ?)');
-        return $stmt->execute([$nom, $description, $prix, $sous_categorie_id, $phare]);
+    // Add a new product
+    public function addProduct($name, $description, $price, $subcategory_id, $featured = 0) {
+        $stmt = $this->pdo->prepare('INSERT INTO products (name, description, price, subcategory_id, featured) VALUES (?, ?, ?, ?, ?)');
+        return $stmt->execute([$name, $description, $price, $subcategory_id, $featured]);
     }
 
-    // Modifier un produit existant
-    public function modifierProduit($id, $nom, $description, $prix, $sous_categorie_id, $phare = 0) {
-        $stmt = $this->pdo->prepare('UPDATE produits SET nom = ?, description = ?, prix = ?, sous_categorie_id = ?, phare = ? WHERE id = ?');
-        return $stmt->execute([$nom, $description, $prix, $sous_categorie_id, $phare, $id]);
+    // Update an existing product
+    public function updateProduct($id, $name, $description, $price, $subcategory_id, $featured = 0) {
+        $stmt = $this->pdo->prepare('UPDATE products SET name = ?, description = ?, price = ?, subcategory_id = ?, featured = ? WHERE id = ?');
+        return $stmt->execute([$name, $description, $price, $subcategory_id, $featured, $id]);
     }
 
-    // Supprimer un produit
-    public function supprimerProduit($id) {
-        $stmt = $this->pdo->prepare('DELETE FROM produits WHERE id = ?');
+    // Delete a product
+    public function deleteProduct($id) {
+        $stmt = $this->pdo->prepare('DELETE FROM products WHERE id = ?');
         return $stmt->execute([$id]);
     }
 }
+
 ?>
