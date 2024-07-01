@@ -6,20 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="public/css/style.css">
     <title>PixelPlush</title>
-    <link rel="icon" href="public/images/logo.png"/>
+    <link rel="icon" href="public/images/logo.png" />
 </head>
 <header>
 
     <body>
         <header>
             <nav>
-                <div class="logo">Boutique Peluches</div>
-                <img src="public/images/logo.png" class="img_logo" alt="logo">
-                <ul>
-                    <li><a href="index.php">Accueil</a></li>
-                    <li><a href="#">Produits</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+
+                <!-- Burger section  -->
+
+                <div>
+                    <ul>
+                        <li><a href="index.php">Accueil</a></li>
+                        <li><a href="#">Produits</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="hamburger-menu">
+                    <button class="hamburger" type="button" id="hamburger-button">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </div>
+
+                <div>
+                    <img src="public/images/logo.png" class="img_logo" alt="logo">
+                </div>
+                
             </nav>
         </header>
 
@@ -73,6 +89,12 @@
         <footer>
             <p>&copy; 2024 Boutique Peluches. Tous droits réservés.</p>
         </footer>
+
+        <!-- Lien avec le fichier Js -->
+        <script src="public/js/burger.js"></script>
+
     </body>
+
+
 
 </html>
