@@ -17,9 +17,24 @@ a:hover {
 }
 
 /* Header */
-.img_logo{
-    height: 100px;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.profile-image-container {
+    margin-left: auto; /* Pour aligner à droite */
+}
+
+.profile-img {
+    width: 50px;
+    height: 50px;
+}
+
+.img_logo {
+    width: 150px;
+    height: auto;
 }
 
 .logo-container {

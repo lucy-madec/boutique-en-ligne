@@ -8,14 +8,18 @@
     <title>PixelPlush</title>
     <link rel="icon" href="public/images/logo.png"/>
 </head>
-<header>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="public/images/logo.png" class="img_logo" alt="logo">
+        </div>
+        <div class="profile-image-container">
+            <a href="#">
+                <img src="public/images/profil.png" class="profile-img" alt="profil">
+            </a>
+        </div>
+    </header>
 
-    <body>
-        <header>
-            <div class="logo-container">
-                <img src="public/images/logo.png" class="img_logo" alt="logo">
-            </div>
-        </header>
 
 
         <section class="section section-primary">
@@ -45,29 +49,8 @@
             </div>
         </section>
 
-        <section id="produits-phares">
-            <h2>Produits Phares</h2>
-            <?php foreach ($produitsPhares as $produit) : ?>
-                <div class="produit">
-                    <h3><?php echo $produit['nom']; ?></h3>
-                    <p><?php echo $produit['description']; ?></p>
-                    <p>Prix: <?php echo $produit['prix']; ?>€</p>
-                </div>
-            <?php endforeach; ?>
-        </section>
-        <section id="derniers-produits">
-            <h2>Derniers Produits</h2>
-            <?php foreach ($derniersProduits as $produit) : ?>
-                <div class="produit">
-                    <h3><?php echo $produit['nom']; ?></h3>
-                    <p><?php echo $produit['description']; ?></p>
-                    <p>Prix: <?php echo $produit['prix']; ?>€</p>
-                </div>
-            <?php endforeach; ?>
-        </section>
         <footer>
             <p>&copy; 2024 Boutique Peluches. Tous droits réservés.</p>
         </footer>
     </body>
-
 </html>
