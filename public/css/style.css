@@ -131,18 +131,8 @@ header {
 footer {
     background-color: #FFB74D; /* Orange Doux */
     color: #FFFFFF; /* Blanc */
+    padding: 10px 0px;
     text-align: center;
-    padding: 10px 20px;
     position: relative;
-    bottom: 0;
     width: 100%;
 }
-
-footer a {
-    color: #FFFFFF; /* Blanc */
-}
-
-footer a:hover {
-    color: #66BB6A; /* Vert Pomme */
-}
-  
