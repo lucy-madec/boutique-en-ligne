@@ -13,17 +13,17 @@
     <body>
         <header>
             <nav>
-
-                <!-- Burger section  -->
-
-                <div>
+                <!-- Options du Menu -->
+                <div id="mobile-menu" class="mobile-menu">
                     <ul>
                         <li><a href="index.php">Accueil</a></li>
-                        <li><a href="#">Produits</a></li>
+                        <li><a href="#">profil</a></li>
+                        <li><a href="#">Catégorie</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
-                </div>
-
+                </div>                
+                
+                <!-- Burger section  -->
                 <div class="hamburger-menu">
                     <button class="hamburger" type="button" id="hamburger-button">
                         <span class="bar"></span>
@@ -35,7 +35,6 @@
                 <div>
                     <img src="public/images/logo.png" class="img_logo" alt="logo">
                 </div>
-                
             </nav>
         </header>
 

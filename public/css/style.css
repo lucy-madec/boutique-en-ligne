@@ -1,19 +1,19 @@
 /* Global Styles */
 body {
     font-family: 'Arial, sans-serif';
-    background-color: #FFFFFF; /* Blanc */
-    color: #424242; /* Gris Foncé */
+    background-color: #FFFFFF; 
+    color: #424242; 
     margin: 0;
     padding: 0;
 }
 
 a {
-    color: #FFB74D; /* Orange Doux */
+    color: #FFB74D;
     text-decoration: none;
 }
 
 a:hover {
-    color: #66BB6A; /* Vert Pomme */
+    color: #66BB6A;
 }
 
 /****** HEADER *******/
@@ -59,17 +59,15 @@ a:hover {
   .hamburger.active .bar:nth-child(3) {
       transform: translateY(-10px) rotate(-135deg);
   }
-  
-
 
 header {
-    background-color: #FFB74D; /* Orange Doux */
-    color: #FFFFFF; /* Blanc */
+    background-color: #FFB74D; 
+    color: #FFFFFF;
     padding: 10px 20px;
 }
 
 header a {
-    color: #FFFFFF; /* Blanc */
+    color: #FFFFFF;
 }
 
 header .logo {
@@ -79,8 +77,8 @@ header .logo {
 
 .img_logo{
     height: 100px;
-
 }
+
 /* Navigation */
 nav {
     display: flex;
@@ -100,8 +98,8 @@ nav ul li {
 
 /* Buttons */
 .button-primary {
-    background-color: #FFB74D; /* Orange Doux */
-    color: #FFFFFF; /* Blanc */
+    background-color: #FFB74D; 
+    color: #FFFFFF;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -109,13 +107,13 @@ nav ul li {
 }
 
 .button-primary:hover {
-    background-color: #66BB6A; /* Vert Pomme */
-    color: #FFFFFF; /* Blanc */
+    background-color: #66BB6A; 
+    color: #FFFFFF;
 }
 
 .button-secondary {
-    background-color: #4FC3F7; /* Bleu Clair */
-    color: #FFFFFF; /* Blanc */
+    background-color: #4FC3F7;
+    color: #FFFFFF;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -123,7 +121,7 @@ nav ul li {
 }
 
 .button-secondary:hover {
-    background-color: #66BB6A; /* Vert Pomme */
+    background-color: #66BB6A; 
     color: #FFFFFF; /* Blanc */
 }
 
@@ -136,19 +134,19 @@ nav ul li {
     display: flex;
 }
 .section-primary {
-    background-color: #4FC3F7; /* Bleu Clair */
-    color: #FFFFFF; /* Blanc */
+    background-color: #4FC3F7; 
+    color: #FFFFFF;
 }
 
 .section-secondary {
-    background-color: #FFFFFF; /* Blanc */
-    color: #424242; /* Gris Foncé */
+    background-color: #FFFFFF;
+    color: #424242; 
 }
 
 /* Product Cards */
 .product-card {
-    background-color: #FFFFFF; /* Blanc */
-    border: 1px solid #4FC3F7; /* Bleu Clair */
+    background-color: #FFFFFF;
+    border: 1px solid #4FC3F7; 
     border-radius: 10px;
     padding: 20px;
     margin: 10px;
@@ -159,21 +157,21 @@ nav ul li {
 .product-card img {
     max-width: 100%;
     height: auto;
-    border-bottom: 1px solid #4FC3F7; /* Bleu Clair */
+    border-bottom: 1px solid #4FC3F7;
     margin-bottom: 15px;
 }
 
 .product-card h2 {
-    color: #FFB74D; /* Orange Doux */
+    color: #FFB74D;
     font-size: 18px;
 }
 
 .product-card p {
-    color: #424242; /* Gris Foncé */
+    color: #424242;
 }
 
 .product-card .price {
-    color: #66BB6A; /* Vert Pomme */
+    color: #66BB6A;
     font-size: 20px;
     font-weight: bold;
 }
@@ -184,8 +182,8 @@ nav ul li {
 
 /* Footer */
 footer {
-    background-color: #FFB74D; /* Orange Doux */
-    color: #FFFFFF; /* Blanc */
+    background-color: #FFB74D; 
+    color: #FFFFFF;
     text-align: center;
     padding: 10px 20px;
     position: relative;
