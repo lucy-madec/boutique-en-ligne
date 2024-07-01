@@ -13,16 +13,18 @@
     <body>
         <header>
             <nav>
-                <!-- Options du Menu -->
+
+                <!-- Menu mobile -->
                 <div id="mobile-menu" class="mobile-menu">
+                    <button id="close-button" class="close-button">&times;</button>
                     <ul>
                         <li><a href="index.php">Accueil</a></li>
-                        <li><a href="#">profil</a></li>
+                        <li><a href="#">Profil</a></li>
                         <li><a href="#">Catégorie</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
-                </div>                
-                
+                </div>
+
                 <!-- Burger section  -->
                 <div class="hamburger-menu">
                     <button class="hamburger" type="button" id="hamburger-button">
